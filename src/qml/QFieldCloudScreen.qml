@@ -361,7 +361,7 @@ Page {
                               status = qsTr('Downloading, %1% fetched').arg(Math.round(DownloadProgress * 100));
                             }
                           } else {
-                            status = qsTr('Reaching out to QFieldCloud to download project');
+                            status = qsTr('Reaching out to QKSLASCloud to download project');
                           }
                         }
                         break;

@@ -231,7 +231,7 @@ Item {
     Text {
       id: cloudIntroLabel
       Layout.fillWidth: true
-      text: qsTr('The easiest way to transfer you project from QGIS to your devices!') + ' <a href="https://qfield.cloud/">' + qsTr('Learn more about QFieldCloud') + '</a>.'
+      text: qsTr('The easiest way to transfer you project from QGIS to your devices!') + ' <a href="https://qfield.cloud/">' + qsTr('Learn more about QKSLASCloud') + '</a>.'
       horizontalAlignment: Text.AlignHCenter
       font: Theme.defaultFont
       color: Theme.mainTextColor

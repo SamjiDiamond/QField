@@ -6,9 +6,9 @@ QtObject {
   id: object
 
   property var darkThemeColors: {
-    "mainColor": "#80cc28",
+    "mainColor": "#012E89",
     "mainOverlayColor": "#ffffff",
-    "accentColor": "#4CAF50",
+    "accentColor": "#186632",
     "accentLightColor": "#994CAF50",
     "mainBackgroundColor": "#303030",
     "mainBackgroundColorSemiOpaque": "#bb303030",

@@ -437,11 +437,11 @@ Page {
         height: enabled ? 48 : 0
         leftPadding: Theme.menuItemLeftPadding
 
-        text: qsTr("Push to QFieldCloud")
+        text: qsTr("Push to QKSLASCloud")
         onTriggered: {
           QFieldCloudUtils.addPendingAttachment(cloudProjectsModel.currentProjectId, itemMenu.itemPath);
           platformUtilities.uploadPendingAttachments(cloudConnection);
-          displayToast(qsTr("‘%1’ is being uploaded to QFieldCloud").arg(FileUtils.fileName(itemMenu.itemPath)));
+          displayToast(qsTr("‘%1’ is being uploaded to QKSLASCloud").arg(FileUtils.fileName(itemMenu.itemPath)));
         }
       }
 

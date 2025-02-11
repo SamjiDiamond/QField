@@ -24,7 +24,7 @@ QfDialog {
 
     Label {
       Layout.fillWidth: true
-      text: qsTr("Some layers have not been packaged correctly on QFieldCloud. These layers might be misconfigured or their data source is not accessible from the QFieldCloud server. Please check the logs of the latest packaging job on the qfield.cloud website.")
+      text: qsTr("Some layers have not been packaged correctly on QKSLASCloud. These layers might be misconfigured or their data source is not accessible from the QKSLASCloud server. Please check the logs of the latest packaging job on the qfield.cloud website.")
       wrapMode: Text.WordWrap
     }
 

@@ -194,7 +194,7 @@ Page {
               Layout.margins: 6
               Layout.topMargin: 12
               Layout.maximumWidth: feedbackView.width - 12
-              text: qsTr("Hey there, how do you like your experience with QField so far?")
+              text: qsTr("Hey there, how do you like your experience with QKSLAS so far?")
               font: Theme.defaultFont
               color: Theme.mainTextColor
               horizontalAlignment: Text.AlignHCenter
@@ -380,7 +380,7 @@ Page {
               Layout.margins: 6
               Layout.topMargin: 12
               Layout.maximumWidth: collectionView.width - 12
-              text: qsTr("To improve stability for everyone, QField collects and sends anonymized metrics.")
+              text: qsTr("To improve stability for everyone, QKSLAS collects and sends anonymized metrics.")
               font: Theme.defaultFont
               color: Theme.mainTextColor
               horizontalAlignment: Text.AlignHCenter
@@ -967,11 +967,11 @@ Page {
       } else {
         var firstRun = !settings.valueBool("/QField/FirstRunDone", false);
         if (firstRun) {
-          welcomeText.text = qsTr("Welcome to QField. First time using this application? Try the sample projects listed below.");
+          welcomeText.text = qsTr("Welcome to QKSLAS. First time using this application? Try the sample projects listed below.");
           settings.setValue("/QField/FirstRunDone", true);
           settings.setValue("/QField/showMapCanvasGuide", true);
         } else {
-          welcomeText.text = qsTr("Welcome back to QField.");
+          welcomeText.text = qsTr("Welcome back to QKSLAS.");
         }
       }
     }

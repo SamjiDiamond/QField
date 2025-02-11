@@ -49,7 +49,7 @@ Popup {
         Layout.fillWidth: true
         font: Theme.defaultFont
         color: Theme.mainTextColor
-        text: qsTr('The current project is not stored on QFieldCloud.<br><br>') + qsTr('Storing projects on QFieldCloud offers seamless synchronization, offline editing, and team management.<br><br>') + ' <a href="https://qfield.cloud/">' + qsTr('Learn more about QFieldCloud') + '</a>.'
+        text: qsTr('The current project is not stored on QKSLASCloud.<br><br>') + qsTr('Storing projects on QKSLASCloud offers seamless synchronization, offline editing, and team management.<br><br>') + ' <a href="https://qfield.cloud/">' + qsTr('Learn more about QKSLASCloud') + '</a>.'
         textFormat: Text.RichText
         wrapMode: Text.WordWrap
         horizontalAlignment: Text.AlignHCenter
@@ -177,7 +177,7 @@ Popup {
           visible: cloudProjectsModel.currentProjectId != '' && cloudProjectsModel.currentProjectId !== cloudProjectsModel.currentProjectData.Id
           font: Theme.tipFont
           color: Theme.secondaryTextColor
-          text: qsTr('This QFieldCloud project was first downloaded with another cloud account. Please sign in with the original account for this project to use the QFieldCloud functionality.')
+          text: qsTr('This QKSLASCloud project was first downloaded with another cloud account. Please sign in with the original account for this project to use the QKSLASCloud functionality.')
 
           wrapMode: Text.WordWrap
           horizontalAlignment: Text.AlignHCenter
@@ -202,7 +202,7 @@ Popup {
                   return qsTr('Downloading, %1% fetched').arg(Math.round(cloudProjectsModel.currentProjectData.DownloadProgress * 100));
                 }
               } else {
-                return qsTr('Reaching out to QFieldCloud to download project');
+                return qsTr('Reaching out to QKSLASCloud to download project');
               }
             }
           case QFieldCloudProjectsModel.Uploading:
@@ -389,7 +389,7 @@ Popup {
             font: Theme.tipFont
             color: Theme.secondaryTextColor
             visible: !cloudProjectsModel.layerObserver.deltaFileWrapper.hasError()
-            text: qsTr('Synchronize the whole project with all modified features and download the freshly updated project with all the applied changes from QFieldCloud.')
+            text: qsTr('Synchronize the whole project with all modified features and download the freshly updated project with all the applied changes from QKSLASCloud.')
             wrapMode: Text.WordWrap
             horizontalAlignment: Text.AlignHCenter
             Layout.bottomMargin: 20

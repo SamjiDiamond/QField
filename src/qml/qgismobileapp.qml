@@ -2744,7 +2744,7 @@ ApplicationWindow {
     }
 
     MenuItem {
-      text: qsTr("About QField")
+      text: qsTr("About QKSLAS")
 
       font: Theme.defaultFont
       icon.source: Theme.getThemeVectorIcon("ic_qfield_black_24dp")
@@ -4023,11 +4023,11 @@ ApplicationWindow {
 
     onPushFinished: function (projectId, isDownloadingProject, hasError, errorString) {
       if (hasError) {
-        displayToast(qsTr("Changes failed to reach QFieldCloud: %1").arg(errorString), 'error');
+        displayToast(qsTr("Changes failed to reach QKSLASCloud: %1").arg(errorString), 'error');
         return;
       }
       if (!isDownloadingProject) {
-        displayToast(qsTr("Changes successfully pushed to QFieldCloud"));
+        displayToast(qsTr("Changes successfully pushed to QKSLASCloud"));
       }
       if (QFieldCloudUtils.hasPendingAttachments()) {
         // Go ahead and upload pending attachments in the background
