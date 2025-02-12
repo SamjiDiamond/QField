@@ -1646,7 +1646,7 @@ Page {
   }
 
   header: QfPageHeader {
-    title: qsTr("QField Settings")
+    title: qsTr("QKSLAS Settings")
 
     showBackButton: true
     showApplyButton: false

@@ -123,7 +123,7 @@ const QString LocalFilesModel::getCurrentTitleFromPath( const QString &path ) co
   }
   else if ( path == PlatformUtilities::instance()->applicationDirectory() )
   {
-    return tr( "QField files directory" );
+    return tr( "QKSLAS files directory" );
   }
   else if ( path == PlatformUtilities::instance()->applicationDirectory() + QStringLiteral( "/Imported Projects" ) )
   {
@@ -215,7 +215,7 @@ void LocalFilesModel::reloadModel()
     const QString applicationDirectory = PlatformUtilities::instance()->applicationDirectory();
     if ( !applicationDirectory.isEmpty() )
     {
-      mItems << Item( ItemMetaType::Folder, ItemType::ApplicationFolder, tr( "QField files directory" ), QString(), applicationDirectory );
+      mItems << Item( ItemMetaType::Folder, ItemType::ApplicationFolder, tr( "QKSLAS files directory" ), QString(), applicationDirectory );
     }
 
     const QStringList additionalApplicationDirectories = PlatformUtilities::instance()->additionalApplicationDirectories();

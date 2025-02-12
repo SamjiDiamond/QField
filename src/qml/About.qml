@@ -88,7 +88,7 @@ Item {
               const qgisVersionWithoutName = qgisVersion.split("-", 1)[0];
               const dependencies = [["QGIS", qgisVersionWithoutName], ["GDAL/OGR", gdalVersion], ["Qt", qVersion]];
               const dependenciesStr = dependencies.map(pair => pair.join(" ")).join(" | ");
-              return "QField<br>" + appVersionStr + " (" + links + ")<br>" + dependenciesStr;
+              return "QKSLAS<br>" + appVersionStr + " (" + links + ")<br>" + dependenciesStr;
             }
 
             onLinkActivated: link => Qt.openUrlExternally(link)
@@ -123,7 +123,7 @@ Item {
             font: Theme.strongFont
             color: Theme.light
             textFormat: Text.RichText
-            text: qsTr("Developed by") + '<br><a href="https://opengis.ch">OPENGIS.ch</a>'
+            text: qsTr("Developed by") + '<br><a href="https://newwavesecosystem.com/">Newwaves Ecosystem Limited</a>'
             onLinkActivated: link => Qt.openUrlExternally(link)
           }
         }
@@ -147,7 +147,7 @@ Item {
         let isDesktopPlatform = Qt.platform.os !== "ios" && Qt.platform.os !== "android";
         let dataDirs = platformUtilities.appDataDirs();
         if (dataDirs.length > 0) {
-          label = dataDirs.length > 1 ? qsTr('QField app directories') : qsTr('QField app directory');
+          label = dataDirs.length > 1 ? qsTr('QKSLAS app directories') : qsTr('QKSLAS app directory');
           for (let dataDir of dataDirs) {
             if (isDesktopPlatform) {
               label += '<br><a href="' + UrlUtils.fromString(dataDir) + '">' + dataDir + '</a>';
