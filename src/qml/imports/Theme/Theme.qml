@@ -27,9 +27,9 @@ QtObject {
   }
 
   property var lightThemeColors: {
-    "mainColor": "#80cc28",
+    "mainColor": "#012E89",
     "mainOverlayColor": "#ffffff",
-    "accentColor": "#4CAF50",
+    "accentColor": "#186632",
     "accentLightColor": "#994CAF50",
     "mainBackgroundColor": "#fafafa",
     "mainBackgroundColorSemiOpaque": "#bbfafafa",
@@ -49,9 +49,9 @@ QtObject {
 
   property bool darkTheme: false
 
-  property color mainColor: "#80cc28"
+  property color mainColor: "#012E89"
   property color mainOverlayColor: "#ffffff"
-  property color accentColor: "#4CAF50"
+  property color accentColor: "#186632"
   property color accentLightColor: "#994CAF50"
 
   property color mainBackgroundColor: "#fafafa"
